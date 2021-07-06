@@ -1,8 +1,9 @@
 body {
     font-family: 'Nunito', sans-serif;
+    /* background-color: #e9ebf7; */
 }
 
-a::after {
+nav a::after {
     content: '';
     display: block;
     width: 0;
@@ -13,7 +14,11 @@ a::after {
     position: relative;
 }
 
-a:hover::after {
+nav a:hover::after {
     width: 100%;
     transition: width .3s;
+}
+
+.bg-home-banner {
+    background-image: url('../images/header-bg.jpg');
 }
