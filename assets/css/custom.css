@@ -3,6 +3,10 @@ body {
     /* background-color: #e9ebf7; */
 }
 
+.brand, .section-title {
+    font-family: 'Philosopher', sans-serif;
+}
+
 nav a::after {
     content: '';
     display: block;
@@ -48,4 +52,10 @@ nav a:hover::after {
 
 .slick-list.draggable {
     padding: 0 !important;
+}
+
+.footer-brand {
+    font-family: 'Philosopher', sans-serif;
+    /* -webkit-text-stroke: 3px #000;
+    -webkit-text-fill-color: white; */
 }
