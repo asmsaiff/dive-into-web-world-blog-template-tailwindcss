@@ -19,6 +19,33 @@ nav a:hover::after {
     transition: width .3s;
 }
 
+.header-bg {
+    background-color: #e9ebf7;
+}
 .bg-home-banner {
     background-image: url('../images/header-bg.jpg');
+}
+.featured-posts-bg {
+    background-image: url('/assets/images/header-bg2.jpg');
+}
+
+.fas.fa-angle-right.clr-gry.slick-arrow {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    z-index: 9;
+    font-size: 25px;
+    z-index: 1;
+}
+
+.fas.fa-angle-left.clr-gry.slick-arrow {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    font-size: 25px;
+    z-index: 1;
+}
+
+.slick-list.draggable {
+    padding: 0 !important;
 }
