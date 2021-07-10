@@ -59,3 +59,12 @@ nav a:hover::after {
     /* -webkit-text-stroke: 3px #000;
     -webkit-text-fill-color: white; */
 }
+
+.prev_next_post_label span {
+    font-size: 10px;
+}
+
+.prev_next_post_label i {
+    font-size: 12px;
+    margin-top: -2px;
+}
