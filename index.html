@@ -23,9 +23,9 @@
 </head>
 <body class="drawer drawer--right">
     <!-- Site Header -->
-    <header class="border-t-4 border-blue-600">
-        <div class="shadow-lg">
-            <div class="px-2 md:px-4 lg:px-0 lg:w-10/12 mx-auto py-2 border-b border-gray-300">
+    <header class="border-t-4 border-blue-600 sticky top-0 z-50">
+        <div class="shadow-lg z-20 bg-white">
+            <div class="px-2 md:px-4 container mx-auto lg:px-0 py-2 border-b border-gray-300">
                 <div class="flex flex-col md:flex-row justify-between text-sm">
                     <div class="flex justify-between md:justify-start text-center md:text-left">
                         <div class="text-left">
@@ -61,7 +61,7 @@
                 </div>
             </div>
             <div class="py-4 sticky top-0">
-                <div class="px-2 md:px-4 lg:px-0 lg:w-10/12 mx-auto flex justify-between">
+                <div class="px-2 md:px-4 lg:px-0 container mx-auto flex justify-between">
                     <h1 class="brand font-thin text-xl">Dive Into Web World</h1>
 
                     <div class="flex" x-data="{ mobileMenuOpen : false }">
@@ -94,55 +94,90 @@
                 </div>
             </div>
         </div>
-
-        <div class="featured-posts-bg bg-black bg-opacity-80 bg-blend-overlay bg-cover bg-no-repeat">
-            <div class="w-11/12 mx-auto relative">
-                <div class="featured-posts-slider">
-                    <div>
-                        <div class="flex flex-col-reverse lg:flex-row gap-8 w-11/12 md:w-10/12 mx-auto py-20 md:py-36">
-                            <div class="self-center">
-                                <h1 class="text-3xl lg:text-6xl font-thin mb-6 text-white">Lorem Ipsum is simply dummy text of the printing</h1>
-                                <p class="mb-8 text-gray-100">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate fugit porro dolores. Ipsam architecto perferendis maiores ut, ad sunt ex!</p>
-        
-                                <a href="/single.html" class="px-4 py-2 bg-blue-600 hover:bg-blue-700 transition duration-300 text-white text-sm">Learn More</a>
-                            </div>
-        
-                            <img src="https://preview.colorlib.com/theme/magdesign/images/ximg_2.jpg.pagespeed.ic.fbbBEgB1Q6.webp" alt="" class="self-center rounded lg:w-10/12 ml-auto">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="flex flex-col-reverse lg:flex-row gap-8 w-11/12 md:w-10/12 mx-auto py-20 md:py-36">
-                            <div class="self-center">
-                                <h1 class="text-3xl lg:text-6xl font-thin mb-6 text-white">Lorem Ipsum is simply dummy text of the printing</h1>
-                                <p class="mb-8 text-gray-100">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate fugit porro dolores. Ipsam architecto perferendis maiores ut, ad sunt ex!</p>
-        
-                                <a href="/single.html" class="px-4 py-2 bg-blue-600 hover:bg-blue-700 transition duration-300 text-white text-sm">Learn More</a>
-                            </div>
-        
-                            <img src="https://preview.colorlib.com/theme/magdesign/images/ximg_2.jpg.pagespeed.ic.fbbBEgB1Q6.webp" alt="" class="self-center rounded lg:w-10/12 ml-auto">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="flex flex-col-reverse lg:flex-row gap-8 w-11/12 md:w-10/12 mx-auto py-20 md:py-36">
-                            <div class="self-center">
-                                <h1 class="text-3xl lg:text-6xl font-thin mb-6 text-white">Lorem Ipsum is simply dummy text of the printing</h1>
-                                <p class="mb-8 text-gray-100">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate fugit porro dolores. Ipsam architecto perferendis maiores ut, ad sunt ex!</p>
-        
-                                <a href="#!" class="px-4 py-2 bg-blue-600 hover:bg-blue-700 transition duration-300 text-white text-sm">Learn More</a>
-                            </div>
-        
-                            <img src="https://preview.colorlib.com/theme/magdesign/images/ximg_2.jpg.pagespeed.ic.fbbBEgB1Q6.webp" alt="" class="self-center rounded lg:w-10/12 ml-auto">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </header>
+
+    <!-- Latest Posts -->
+    <div class="container mx-auto">
+        <section class="pb-8 grid grid-cols-2 md:gap-4 px-4 lg:px-0">
+            <a href="#" class="col-span-2 md:col-span-1 h-96 lg:h-0 featured-image bg-cover bg-no-repeat bg-gray-700 bg-blend-overlay p-6 flex flex-col min-h-full">
+                <div class="flex-grow"></div>
+                <div class="bottom-0 text-white">
+                    <div class="flex space-x-4 mt-6">
+                        <div class="flex text-sm font-semibold space-x-2">
+                            <h6 class="font-thin">Business, Travel</h6>
+                            <span>—</span>
+                            <p class="font-thin text-gray-50">7th July, 2021</p>
+                        </div>
+                    </div>
+    
+                    <h2 class="py-1 text-xl font-bold hover:underline">Your most unhappy customers are your greatest source of learning.</h2>
+                </div>
+            </a>
+            <div class="col-span-3 md:col-span-1 grid grid-cols-2 gap-4 mt-4 md:mt-0">
+                <a href="#" class="featured-image bg-cover bg-no-repeat bg-gray-700 bg-blend-overlay p-2 sm:p-6 h-56 flex flex-col">
+                    <div class="sm:flex-grow"></div>
+                    <div class="bottom-0 text-white">
+                        <div class="flex space-x-4 mt-6">
+                            <div class="flex flex-col xl:flex-row text-sm font-semibold space-x-0 xl:space-x-2">
+                                <h6 class="font-thin">Business, Travel</h6>
+                                <span>—</span>
+                                <p class="font-thin text-gray-50">7th July, 2021</p>
+                            </div>
+                        </div>
+        
+                        <h2 class="py-1 text-sm lg:text-base font-bold hover:underline">Your most unhappy customers are your greatest source of learning.</h2>
+                    </div>
+                </a>
+                <a href="#" class="featured-image bg-cover bg-no-repeat bg-gray-700 bg-blend-overlay p-2 sm:p-6 h-56 flex flex-col">
+                    <div class="sm:flex-grow"></div>
+                    <div class="bottom-0 text-white">
+                        <div class="flex space-x-4 mt-6">
+                            <div class="flex flex-col xl:flex-row text-sm font-semibold space-x-0 xl:space-x-2">
+                                <h6 class="font-thin">Business, Travel</h6>
+                                <span>—</span>
+                                <p class="font-thin text-gray-50">7th July, 2021</p>
+                            </div>
+                        </div>
+        
+                        <h2 class="py-1 text-sm lg:text-base font-bold hover:underline">Your most unhappy customers are your greatest source of learning.</h2>
+                    </div>
+                </a>
+                <a href="#" class="featured-image bg-cover bg-no-repeat bg-gray-700 bg-blend-overlay p-2 sm:p-6 h-56 flex flex-col">
+                    <div class="sm:flex-grow"></div>
+                    <div class="bottom-0 text-white">
+                        <div class="flex space-x-4 mt-6">
+                            <div class="flex flex-col xl:flex-row text-sm font-semibold space-x-0 xl:space-x-2">
+                                <h6 class="font-thin">Business, Travel</h6>
+                                <span>—</span>
+                                <p class="font-thin text-gray-50">7th July, 2021</p>
+                            </div>
+                        </div>
+        
+                        <h2 class="py-1 text-sm lg:text-base font-bold hover:underline">Your most unhappy customers are your greatest source of learning.</h2>
+                    </div>
+                </a>
+                <a href="#" class="featured-image bg-cover bg-no-repeat bg-gray-700 bg-blend-overlay p-2 sm:p-6 h-56 flex flex-col">
+                    <div class="sm:flex-grow"></div>
+                    <div class="bottom-0 text-white">
+                        <div class="flex space-x-4 mt-6">
+                            <div class="flex flex-col xl:flex-row text-sm font-semibold space-x-0 xl:space-x-2">
+                                <h6 class="font-thin">Business, Travel</h6>
+                                <span>—</span>
+                                <p class="font-thin text-gray-50">7th July, 2021</p>
+                            </div>
+                        </div>
+        
+                        <h2 class="py-1 text-sm lg:text-base font-bold hover:underline">Your most unhappy customers are your greatest source of learning.</h2>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </div>
 
     <!-- Main Content Body -->
     <main class="container mx-auto">
-        <!-- Featured Section -->
-        <section class="pt-16 pb-8 grid grid-cols-3 gap-12 px-4 sm:px-0">
+        <!-- Trending Section -->
+        <section class="md:pt-16 pb-8 grid grid-cols-3 gap-12 px-4 sm:px-0">
             <div class="col-span-3 lg:col-span-2">
                 <h2 class="section-title text-2xl font-semibold pb-1">Trending</h2>
                 <hr>
@@ -265,7 +300,7 @@
                 </div>
             </div>
             <div class="col-span-3 lg:col-span-1">
-                <div class="grid grid-cols-1 top-4 sticky">
+                <div class="grid grid-cols-1 top-32 sticky">
                     <h2 class="section-title text-2xl font-semibold pb-1">Most Popular</h2>
                     <hr>
                     <div class="grid gap-4 mt-2">
@@ -374,7 +409,7 @@
         </section>
 
         <!-- WordPress Section -->
-        <section class="sm:pt-16 pb-8 gap-12 px-4 sm:px-0">
+        <section class="sm:pt-16 lg:pt-0 pb-8 gap-12 px-4 sm:px-0">
             <h2 class="section-title text-2xl font-semibold pb-1">WordPress - All You Need to Know</h2>
             <hr>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-3 mb-6">
@@ -513,7 +548,6 @@
                 </div>
             </div>
         </section>
-
 
         <!-- Modern Web Technologies Section -->
         <section class="pt-6 sm:pt-16 pb-8 grid xl:grid-cols-2 gap-12 px-4 sm:px-0">
@@ -674,6 +708,147 @@
             </div>
         </section>
     </main>
+
+    <!-- Miscellaneous Section -->
+    <section class="container mx-auto sm:pt-16 lg:pt-0 pb-8 gap-12 px-4 sm:px-0">
+        <h2 class="section-title text-2xl font-semibold pb-1">Miscellaneous</h2>
+        <hr>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-3 mb-6">
+            <div class="border-b sm:border-none pb-4 sm:pb-0">
+                <img src="https://preview.colorlib.com/theme/magdesign/images/ximg_2.jpg.pagespeed.ic.fbbBEgB1Q6.webp" alt="" class="rounded-lg">
+                
+                <div class="flex space-x-4 mt-6">
+                    
+
+                    <div class="flex text-sm font-semibold space-x-2">
+                        <h6 class="font-thin">Business, Travel</h6>
+                        <span>—</span>
+                        <p class="font-thin text-gray-500">7th July, 2021</p>
+                    </div>
+                </div>
+
+                <h2 class="py-1 text-xl font-bold">Your most unhappy customers are your greatest source of learning.</h2>
+
+                <p class="mb-6 mt-2 text-gray-700">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam eum quisquam aspernatur iusto ratione ad inventore deserunt velit....
+                </p>
+
+                <div class="flex space-x-2">
+                    <img src="https://preview.colorlib.com/theme/magdesign/images/xperson_1.jpg.pagespeed.ic.Zebptmx_f8.webp" alt="" class="rounded-full w-10 h-10">
+
+                    <div>
+                        <h4 class="font-semibold">John Doe</h4>
+                        <p class="text-sm text-gray-500">CEO and Founder</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-b sm:border-none pb-4 sm:pb-0">
+                <img src="https://preview.colorlib.com/theme/magdesign/images/ximg_2.jpg.pagespeed.ic.fbbBEgB1Q6.webp" alt="" class="rounded-lg">
+                
+                <div class="flex space-x-4 mt-6">
+                    
+
+                    <div class="flex text-sm font-semibold space-x-2">
+                        <h6 class="font-thin">Business, Travel</h6>
+                        <span>—</span>
+                        <p class="font-thin text-gray-500">7th July, 2021</p>
+                    </div>
+                </div>
+
+                <h2 class="py-1 text-xl font-bold">Your most unhappy customers are your greatest source of learning.</h2>
+
+                <p class="mb-6 mt-2 text-gray-700">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam eum quisquam aspernatur iusto ratione ad inventore deserunt velit....
+                </p>
+
+                <div class="flex space-x-2">
+                    <img src="https://preview.colorlib.com/theme/magdesign/images/xperson_1.jpg.pagespeed.ic.Zebptmx_f8.webp" alt="" class="rounded-full w-10 h-10">
+
+                    <div>
+                        <h4 class="font-semibold">John Doe</h4>
+                        <p class="text-sm text-gray-500">CEO and Founder</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-b sm:border-none pb-4 sm:pb-0">
+                <img src="https://preview.colorlib.com/theme/magdesign/images/ximg_3.jpg.pagespeed.ic.TsSrvxpHvJ.webp" alt="" class="rounded-lg">
+                
+                <div class="flex space-x-4 mt-6">
+                    <div class="flex text-sm font-semibold space-x-2">
+                        <h6 class="font-thin">Business, Travel</h6>
+                        <span>—</span>
+                        <p class="font-thin text-gray-500">7th July, 2021</p>
+                    </div>
+                </div>
+
+                <h2 class="py-1 text-xl font-bold">Your most unhappy customers are your greatest source of learning.</h2>
+
+                <p class="mb-6 mt-2 text-gray-700">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam eum quisquam aspernatur iusto ratione ad inventore deserunt velit....
+                </p>
+
+                <div class="flex space-x-2">
+                    <img src="https://preview.colorlib.com/theme/magdesign/images/xperson_1.jpg.pagespeed.ic.Zebptmx_f8.webp" alt="" class="rounded-full w-10 h-10">
+
+                    <div>
+                        <h4 class="font-semibold">John Doe</h4>
+                        <p class="text-sm text-gray-500">CEO and Founder</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 border-b sm:border-none pb-4 sm:pb-0">
+            <div class="border-b sm:border-none pb-4 sm:pb-0">
+                <div class="flex space-x-4 md:mt-6">
+                    <div class="flex text-sm font-semibold space-x-2">
+                        <h6 class="font-thin">Business, Travel</h6>
+                        <span>—</span>
+                        <p class="font-thin text-gray-500">7th July, 2021</p>
+                    </div>
+                </div>
+
+                <h2 class="py-1 text-xl font-bold">Your most unhappy customers are your greatest source of learning.</h2>
+
+                <p class="md:mb-6 mt-2 text-gray-700">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam eum quisquam aspernatur iusto ratione ad inventore deserunt velit....
+                </p>
+            </div>
+
+            <div class="border-b sm:border-none pb-4 sm:pb-0">
+                <div class="flex space-x-4 md:mt-6">
+                    <div class="flex text-sm font-semibold space-x-2">
+                        <h6 class="font-thin">Business, Travel</h6>
+                        <span>—</span>
+                        <p class="font-thin text-gray-500">7th July, 2021</p>
+                    </div>
+                </div>
+
+                <h2 class="py-1 text-xl font-bold">Your most unhappy customers are your greatest source of learning.</h2>
+
+                <p class="md:mb-6 mt-2 text-gray-700">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam eum quisquam aspernatur iusto ratione ad inventore deserunt velit....
+                </p>
+            </div>
+            
+            <div class="border-b sm:border-none pb-4 sm:pb-0">
+                <div class="flex space-x-4 md:mt-6">
+                    <div class="flex text-sm font-semibold space-x-2">
+                        <h6 class="font-thin">Business, Travel</h6>
+                        <span>—</span>
+                        <p class="font-thin text-gray-500">7th July, 2021</p>
+                    </div>
+                </div>
+
+                <h2 class="py-1 text-xl font-bold">Your most unhappy customers are your greatest source of learning.</h2>
+
+                <p class="md:mb-6 mt-2 text-gray-700">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam eum quisquam aspernatur iusto ratione ad inventore deserunt velit....
+                </p>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="bg-gray-100">
