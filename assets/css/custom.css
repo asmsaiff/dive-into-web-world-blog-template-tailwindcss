@@ -26,6 +26,9 @@ nav a:hover::after {
 .featured-image {
     background-image: url('https://preview.colorlib.com/theme/magdesign/images/ximg_2.jpg.pagespeed.ic.fbbBEgB1Q6.webp');
 }
+.page-featured-image {
+    background-image: url('https://preview.colorlib.com/theme/magdesign/images/ximg_2.jpg.pagespeed.ic.fbbBEgB1Q6.webp')
+}
 
 .fas.fa-angle-right.clr-gry.slick-arrow {
     position: absolute;
@@ -61,4 +64,14 @@ nav a:hover::after {
 .prev_next_post_label i {
     font-size: 12px;
     margin-top: -2px;
+}
+
+.after-hr::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 55%;
+    top: 50%;
+    right: 0;
+    background-color: silver;
 }
